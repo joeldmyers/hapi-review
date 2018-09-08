@@ -10,6 +10,7 @@ const server = new Hapi.server({
 
 // start server
 
+
 server.route({
   method: 'GET',
   path: '/',
@@ -27,8 +28,19 @@ server.route({
     }
 });
 
-
 const init = async () => {
+
+  await server.register(require('inert'));
+
+  server.route({
+    method: 'GET',
+    path: '/hello',
+    handler: (request, h) => {
+      return h.file('./public/hello.html');
+    }
+  });
+
+
   await server.start();
   console.log(`Server running at: ${server.info.uri}`);
 }

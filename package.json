@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/joeldmyers/hapi-review#readme",
   "dependencies": {
-    "hapi": "^17.5.4"
+    "hapi": "^17.5.4",
+    "inert": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
   }
 }
