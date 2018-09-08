@@ -18,6 +18,7 @@
   "homepage": "https://github.com/joeldmyers/hapi-review#readme",
   "dependencies": {
     "hapi": "^17.5.4",
+    "hapi-pino": "^5.1.0",
     "inert": "^5.1.0"
   },
   "devDependencies": {
